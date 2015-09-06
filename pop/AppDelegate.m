@@ -21,7 +21,10 @@
 @property (weak) IBOutlet NSTextField *dayLabel;
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    NSDateComponents *_currentDay;
+    NSTimer *_midnightTimer;
+}
 
 -(void)awakeFromNib {
     
@@ -43,6 +46,10 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(handleSysTimeChanged:)
                                                  name:NSSystemClockDidChangeNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleSysTimeChanged:)
+                                                 name:@"OHYES"
                                                object:nil];
     
     int today = [_start getToday];
@@ -74,7 +81,8 @@
     NSLog(@"app runs OK %i", [_start getToday]);
 //        int dayValue = [_start getToday];
     
-    
+    [self checkDayChange:nil];
+
     
     
 }
@@ -132,8 +140,37 @@
         [_status setImage:_statusIcon];
     }
     
-    
+    [self checkDayChange:nil];
 }
 
+- (void)checkDayChange:(NSTimer *)timer{
+    NSDate *now = [NSDate date];
+    
+    NSCalendarUnit units = NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
+    NSDateComponents *currentDay = [[NSCalendar currentCalendar] components:units fromDate:now];
+    
+    if (! [_currentDay isEqual:currentDay]) {
+        if (_currentDay == nil) {
+            _currentDay = [currentDay copy];
+        } else {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"OHYES"
+                                                                object:self];
+        }
+    }
+    
+    if (_midnightTimer.valid)
+        [_midnightTimer invalidate];
+    
+    currentDay.day += 1;
+    NSDate *midnight = [[NSCalendar currentCalendar] dateFromComponents:currentDay];
+    
+    NSTimeInterval timeTillMidnight = [midnight timeIntervalSinceDate:now];
+    
+    _midnightTimer = [NSTimer scheduledTimerWithTimeInterval:timeTillMidnight + 0.1
+                                                      target:self
+                                                    selector:@selector(checkDayChange:)
+                                                    userInfo:nil
+                                                     repeats:NO];
+}
 
 @end
