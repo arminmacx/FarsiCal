@@ -13,8 +13,7 @@
 @property (weak) IBOutlet NSWindow *window;
 @property (strong, nonatomic) NSEvent *popoverTransiencyMonitor;
 @property NSDictionary *imageSets;
-//@property NSMutableArray *imageArray;
-//@property NSMutableArray *imageFromDic;
+
 @property NSImage *statusIcon;
 @property NSString *iconString;
 @property Date *start;
@@ -22,24 +21,14 @@
 @end
 
 @implementation AppDelegate{
-    NSDateComponents *_currentDay;
-    NSTimer *_midnightTimer;
+//    NSDateComponents *_currentDay;
+//    NSTimer *_midnightTimer;
 }
 
 -(void)awakeFromNib {
     
     _start = [[Date alloc] init];
     _status = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-//    NSImage *images = [NSImage imageNamed:@"statusbar-icon1"];
-//    [_status setHighlightMode:YES];
-//    [images setTemplate:YES];
-//    [_status setImage:images];
-    
-   
-
-    
-    
-    
     NSStatusBarButton *button = _status.button;
     button.target = self;
     button.action = @selector(click:);
@@ -49,7 +38,7 @@
                                                object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(handleSysTimeChanged:)
-                                                 name:@"OHYES"
+                                                 name:NSCalendarDayChangedNotification
                                                object:nil];
     
     int today = [_start getToday];
@@ -63,8 +52,6 @@
 
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-
-//    Date *new = [[Date alloc] init];
     _start = [[Date alloc] init];
     [_dayInMonth setFont:[NSFont fontWithName:@"BSinaBold" size:80.0f]];
     [_todayName setFont:[NSFont fontWithName:@"BSinaBold" size:30.0f]];
@@ -79,12 +66,6 @@
     
     
     NSLog(@"app runs OK %i", [_start getToday]);
-//        int dayValue = [_start getToday];
-    
-    [self checkDayChange:nil];
-
-    
-    
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -126,13 +107,6 @@
         [_yearNumber setStringValue:_start.yearDate];
         _iconString = [NSString stringWithFormat:@"%i", [_start getToday]];
         NSLog(@"string value for dictionary %@", _iconString);
-//        [_imageSets objectForKey:_iconString];
-//        NSLog(@"icon %@", [_imageSets objectForKey:_iconString]);
-//        _statusIcon = [NSImage imageNamed:[_imageSets objectForKey:_iconString]];
-//        [_statusIcon setTemplate:YES];
-//        [_status setImage:_statusIcon];
-
-        
         int today = [_start getToday];
         _iconString = [NSString stringWithFormat:@"%i",today];
         _statusIcon = [self getImageFromNumber:today];
@@ -140,37 +114,37 @@
         [_status setImage:_statusIcon];
     }
     
-    [self checkDayChange:nil];
+
 }
 
-- (void)checkDayChange:(NSTimer *)timer{
-    NSDate *now = [NSDate date];
-    
-    NSCalendarUnit units = NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
-    NSDateComponents *currentDay = [[NSCalendar currentCalendar] components:units fromDate:now];
-    
-    if (! [_currentDay isEqual:currentDay]) {
-        if (_currentDay == nil) {
-            _currentDay = [currentDay copy];
-        } else {
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"OHYES"
-                                                                object:self];
-        }
-    }
-    
-    if (_midnightTimer.valid)
-        [_midnightTimer invalidate];
-    
-    currentDay.day += 1;
-    NSDate *midnight = [[NSCalendar currentCalendar] dateFromComponents:currentDay];
-    
-    NSTimeInterval timeTillMidnight = [midnight timeIntervalSinceDate:now];
-    
-    _midnightTimer = [NSTimer scheduledTimerWithTimeInterval:timeTillMidnight + 0.1
-                                                      target:self
-                                                    selector:@selector(checkDayChange:)
-                                                    userInfo:nil
-                                                     repeats:NO];
-}
+//- (void)checkDayChange:(NSTimer *)timer{
+//    NSDate *now = [NSDate date];
+//    
+//    NSCalendarUnit units = NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
+//    NSDateComponents *currentDay = [[NSCalendar currentCalendar] components:units fromDate:now];
+//    
+//    if (! [_currentDay isEqual:currentDay]) {
+//        if (_currentDay == nil) {
+//            _currentDay = [currentDay copy];
+//        } else {
+//            [[NSNotificationCenter defaultCenter] postNotificationName:@"OHYES"
+//                                                                object:self];
+//        }
+//    }
+//    
+//    if (_midnightTimer.valid)
+//        [_midnightTimer invalidate];
+//    
+//    currentDay.day += 1;
+//    NSDate *midnight = [[NSCalendar currentCalendar] dateFromComponents:currentDay];
+//    
+//    NSTimeInterval timeTillMidnight = [midnight timeIntervalSinceDate:now];
+//    
+//    _midnightTimer = [NSTimer scheduledTimerWithTimeInterval:timeTillMidnight + 0.1
+//                                                      target:self
+//                                                    selector:@selector(checkDayChange:)
+//                                                    userInfo:nil
+//                                                     repeats:NO];
+//}
 
 @end
