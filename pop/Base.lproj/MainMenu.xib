@@ -716,8 +716,21 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-Ic-7m2">
+                    <rect key="frame" x="163" y="236" width="25" height="31"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="circular" image="Image" imagePosition="above" alignment="left" refusesFirstResponder="YES" imageScaling="proportionallyDown" id="eHM-gQ-gaY">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="label"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="exitButton:" target="Voe-Tx-rLC" id="Agf-TW-jOd"/>
+                    </connections>
+                </button>
             </subviews>
             <point key="canvasLocation" x="282.5" y="273.5"/>
         </customView>
     </objects>
+    <resources>
+        <image name="Image" width="258" height="258"/>
+    </resources>
 </document>

@@ -117,6 +117,15 @@
 
 }
 
+- (IBAction)exitButton:(NSButton *)sender {
+    
+    [[NSApplication sharedApplication] terminate:self];
+}
+
+
+
+
+
 //- (void)checkDayChange:(NSTimer *)timer{
 //    NSDate *now = [NSDate date];
 //    
