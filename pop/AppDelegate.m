@@ -118,12 +118,18 @@
         [_yearNumber setStringValue:_start.yearDate];
         _iconString = [NSString stringWithFormat:@"%i", [_start getToday]];
         NSLog(@"string value for dictionary %@", _iconString);
-        [_imageSets objectForKey:_iconString];
-        NSLog(@"icon %@", [_imageSets objectForKey:_iconString]);
-        _statusIcon = [NSImage imageNamed:[_imageSets objectForKey:_iconString]];
+//        [_imageSets objectForKey:_iconString];
+//        NSLog(@"icon %@", [_imageSets objectForKey:_iconString]);
+//        _statusIcon = [NSImage imageNamed:[_imageSets objectForKey:_iconString]];
+//        [_statusIcon setTemplate:YES];
+//        [_status setImage:_statusIcon];
+
+        
+        int today = [_start getToday];
+        _iconString = [NSString stringWithFormat:@"%i",today];
+        _statusIcon = [self getImageFromNumber:today];
         [_statusIcon setTemplate:YES];
         [_status setImage:_statusIcon];
-        
     }
     
     
