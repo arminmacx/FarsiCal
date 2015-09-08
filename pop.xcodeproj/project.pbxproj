@@ -341,7 +341,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = pop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pop;
 			};
 			name = Debug;
 		};
@@ -352,7 +352,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = pop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pop;
 			};
 			name = Release;
 		};
@@ -371,7 +371,7 @@
 				);
 				INFOPLIST_FILE = popTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = popTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pop.app/Contents/MacOS/pop";
 			};
 			name = Debug;
@@ -387,7 +387,7 @@
 				);
 				INFOPLIST_FILE = popTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = popTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pop.app/Contents/MacOS/pop";
 			};
 			name = Release;

@@ -20,10 +20,8 @@
 @property (weak) IBOutlet NSTextField *dayLabel;
 @end
 
-@implementation AppDelegate{
-//    NSDateComponents *_currentDay;
-//    NSTimer *_midnightTimer;
-}
+@implementation AppDelegate
+
 
 -(void)awakeFromNib {
     
@@ -122,38 +120,5 @@
     [[NSApplication sharedApplication] terminate:self];
 }
 
-
-
-
-
-//- (void)checkDayChange:(NSTimer *)timer{
-//    NSDate *now = [NSDate date];
-//    
-//    NSCalendarUnit units = NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
-//    NSDateComponents *currentDay = [[NSCalendar currentCalendar] components:units fromDate:now];
-//    
-//    if (! [_currentDay isEqual:currentDay]) {
-//        if (_currentDay == nil) {
-//            _currentDay = [currentDay copy];
-//        } else {
-//            [[NSNotificationCenter defaultCenter] postNotificationName:@"OHYES"
-//                                                                object:self];
-//        }
-//    }
-//    
-//    if (_midnightTimer.valid)
-//        [_midnightTimer invalidate];
-//    
-//    currentDay.day += 1;
-//    NSDate *midnight = [[NSCalendar currentCalendar] dateFromComponents:currentDay];
-//    
-//    NSTimeInterval timeTillMidnight = [midnight timeIntervalSinceDate:now];
-//    
-//    _midnightTimer = [NSTimer scheduledTimerWithTimeInterval:timeTillMidnight + 0.1
-//                                                      target:self
-//                                                    selector:@selector(checkDayChange:)
-//                                                    userInfo:nil
-//                                                     repeats:NO];
-//}
 
 @end

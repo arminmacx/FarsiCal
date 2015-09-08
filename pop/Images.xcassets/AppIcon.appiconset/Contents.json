@@ -3,7 +3,7 @@
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "16x16.png",
+      "filename" : "5.png",
       "scale" : "1x"
     },
     {
@@ -14,7 +14,7 @@
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "32x32.png",
+      "filename" : "4.png",
       "scale" : "1x"
     },
     {
@@ -23,9 +23,8 @@
       "scale" : "2x"
     },
     {
-      "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "128x128.png",
+      "size" : "128x128",
       "scale" : "1x"
     },
     {
@@ -36,7 +35,7 @@
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "256x256.png",
+      "filename" : "2.png",
       "scale" : "1x"
     },
     {
@@ -45,13 +44,15 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "1.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "mac",
       "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "OS X Icon Template [1.0] copy.png",
       "scale" : "2x"
     }
   ],
