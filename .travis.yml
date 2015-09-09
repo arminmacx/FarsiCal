@@ -1,4 +1,4 @@
 language: objective-c
 osx_image: xcode6.4
-xcode_project: https://github.com/arminmacx/FarsiCal/tree/master/pop.xcodeproj
-xcode_scheme: https://github.com/arminmacx/FarsiCal/blob/master/popTests/
+xcode_project: https://github.com/arminmacx/FarsiCal/tree/master/pop.xcodeproj/
+xcode_scheme: https://github.com/arminmacx/FarsiCal/tree/master/popTests
