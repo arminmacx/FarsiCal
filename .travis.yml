@@ -1,4 +1,4 @@
 language: objective-c
 
 xcode_project: pop.xcodeproj
-xcode_scheme: popTests
+xcode_scheme: pop
