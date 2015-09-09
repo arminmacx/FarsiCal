@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
-               BuildableName = "FarsiCal.app"
+               BuildableName = "pop.app"
                BlueprintName = "pop"
                ReferencedContainer = "container:pop.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
-               BuildableName = "FarsiCalTests.xctest"
+               BuildableName = "popTests.xctest"
                BlueprintName = "popTests"
                ReferencedContainer = "container:pop.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
-               BuildableName = "FarsiCalTests.xctest"
+               BuildableName = "popTests.xctest"
                BlueprintName = "popTests"
                ReferencedContainer = "container:pop.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
-            BuildableName = "FarsiCal.app"
+            BuildableName = "pop.app"
             BlueprintName = "pop"
             ReferencedContainer = "container:pop.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
-            BuildableName = "FarsiCal.app"
+            BuildableName = "pop.app"
             BlueprintName = "pop"
             ReferencedContainer = "container:pop.xcodeproj">
          </BuildableReference>
@@ -96,7 +96,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
-            BuildableName = "FarsiCal.app"
+            BuildableName = "pop.app"
             BlueprintName = "pop"
             ReferencedContainer = "container:pop.xcodeproj">
          </BuildableReference>
