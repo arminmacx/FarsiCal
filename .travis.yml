@@ -1,4 +1,4 @@
 language: objective-c
-
+osx_image: xcode6.4
 xcode_project: pop.xcodeproj
-xcode_scheme: popTests
+xcode_scheme: pop
