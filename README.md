@@ -1,4 +1,4 @@
-# FarsiCal
+# FarsiCal [![Build Status](https://travis-ci.org/arminmacx/FarsiCal.svg?branch=master)](https://travis-ci.org/arminmacx/FarsiCal)
 
 Simple and elegant persian calendar for Mac user.
 It just run on you statusbar and show you current date and if you
