@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Date.h"
+#import "PrefView.h"
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
@@ -119,6 +120,18 @@
     
     [[NSApplication sharedApplication] terminate:self];
 }
+
+- (IBAction)changeView:(NSButton *)sender {
+    
+    NSViewController *controller = [[NSViewController alloc] initWithNibName:@"PrefView" bundle:nil];
+    NSView *view = [controller view];
+    
+    [_popOver.contentViewController setView:view];
+    
+    
+}
+
+
 
 
 @end
