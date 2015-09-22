@@ -25,7 +25,7 @@
 @property (strong) IBOutlet NSTextField *dayInMonth;
 @property (strong) IBOutlet NSTextField *monthName;
 @property (strong) IBOutlet NSTextField *yearNumber;
-- (IBAction)changeView:(NSButton *)sender;
+//- (IBAction)changeView:(NSButton *)sender;
 
 @end
 
