@@ -8,10 +8,11 @@
 
 #import "AppDelegate.h"
 #import "Date.h"
-#import "PrefView.h"
+#import "OptionPopover.h"
+
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
+//@property (weak) IBOutlet NSWindow *window;
 @property (strong, nonatomic) NSEvent *popoverTransiencyMonitor;
 @property NSDictionary *imageSets;
 
@@ -40,6 +41,8 @@
                                                  name:NSCalendarDayChangedNotification
                                                object:nil];
     
+//    _status.length = 85;
+//    _status.title = _start.nameOfMonth;
     int today = [_start getToday];
     _iconString = [NSString stringWithFormat:@"%i",today];
     _statusIcon = [self getImageFromNumber:today];
@@ -122,13 +125,16 @@
 }
 
 - (IBAction)changeView:(NSButton *)sender {
+    NSLog (@"Custom button pressed.");
+    NSButton *button = (NSButton *) sender;
     
-    NSViewController *controller = [[NSViewController alloc] initWithNibName:@"PrefView" bundle:nil];
-    NSView *view = [controller view];
+    optionPopover = [[OptionPopover alloc] initWithNibName:@"OptionPopover" bundle:Nil];
+    //NSView *buttonView = [optionsButton view];
+    //NSRect buttonFrame = [optionsButton view]->_frame;
+    [optionPopover showPopup:button];
     
-    [_popOver.contentViewController setView:view];
     
-    
+
 }
 
 

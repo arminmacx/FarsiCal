@@ -8,16 +8,24 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Date.h"
-@interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@class OptionPopover;
+
+
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    
+    OptionPopover *optionPopover;
+    
+}
+
+@property (assign) IBOutlet NSWindow *window;
 @property NSStatusItem *status;
 @property (weak) IBOutlet NSPopover *popOver;
 @property (strong) IBOutlet NSTextField *todayName;
 @property (strong) IBOutlet NSTextField *dayInMonth;
 @property (strong) IBOutlet NSTextField *monthName;
 @property (strong) IBOutlet NSTextField *yearNumber;
-
-
+- (IBAction)changeView:(NSButton *)sender;
 
 @end
 

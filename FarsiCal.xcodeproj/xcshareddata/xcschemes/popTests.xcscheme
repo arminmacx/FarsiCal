@@ -9,29 +9,15 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
-               BuildableName = "pop.app"
-               BlueprintName = "pop"
-               ReferencedContainer = "container:pop.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
-               BuildableName = "popTests.xctest"
-               BlueprintName = "popTests"
-               ReferencedContainer = "container:pop.xcodeproj">
+               BuildableName = "FarsiCal.xctest"
+               BlueprintName = "FarsiCalTests"
+               ReferencedContainer = "container:FarsiCal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,19 +33,19 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
-               BuildableName = "popTests.xctest"
-               BlueprintName = "popTests"
-               ReferencedContainer = "container:pop.xcodeproj">
+               BuildableName = "FarsiCal.xctest"
+               BlueprintName = "FarsiCalTests"
+               ReferencedContainer = "container:FarsiCal.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
-            BuildableName = "pop.app"
-            BlueprintName = "pop"
-            ReferencedContainer = "container:pop.xcodeproj">
+            BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
+            BuildableName = "FarsiCal.xctest"
+            BlueprintName = "FarsiCalTests"
+            ReferencedContainer = "container:FarsiCal.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
-            BuildableName = "pop.app"
-            BlueprintName = "pop"
-            ReferencedContainer = "container:pop.xcodeproj">
+            BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
+            BuildableName = "FarsiCal.xctest"
+            BlueprintName = "FarsiCalTests"
+            ReferencedContainer = "container:FarsiCal.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -94,16 +79,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
-            BuildableName = "pop.app"
-            BlueprintName = "pop"
-            ReferencedContainer = "container:pop.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

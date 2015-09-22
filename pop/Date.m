@@ -16,7 +16,8 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"fa_IR"];
-    
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Tehran"]];
+
     [dateFormatter setDateFormat:@"yyyy"];
     NSString *year = [dateFormatter stringFromDate:[NSDate date]];
     
@@ -29,7 +30,8 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"fa_IR"];
-    
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Tehran"]];
+
     [dateFormatter setDateFormat:@"MMMM"];
     NSString *month = [dateFormatter stringFromDate:[NSDate date]];
     
@@ -42,7 +44,7 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"fa_IR"];
-    
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Tehran"]];
     [dateFormatter setDateFormat:@"dd"];
     int day = [[dateFormatter stringFromDate:[NSDate date]] intValue];
    
@@ -54,7 +56,8 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"fa_IR"];
-    
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Tehran"]];
+
     [dateFormatter setDateFormat:@"EE"];
     NSString *name = [dateFormatter stringFromDate:[NSDate date]];
     
@@ -66,7 +69,8 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"fa_IR"];
-    
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Tehran"]];
+
     [dateFormatter setDateFormat:@"HH"];
     int hour = [[dateFormatter stringFromDate:[NSDate date]] intValue];
    
@@ -78,7 +82,8 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"fa_IR"];
-    
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Tehran"]];
+
     [dateFormatter setDateFormat:@"mm"];
     int minute = [[dateFormatter stringFromDate:[NSDate date]] intValue];
     

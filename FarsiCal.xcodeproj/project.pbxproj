@@ -12,9 +12,9 @@
 		C64FA9F31B20EDE60084D1E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C64FA9F21B20EDE60084D1E5 /* main.m */; };
 		C64FA9F51B20EDE60084D1E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64FA9F41B20EDE60084D1E5 /* Images.xcassets */; };
 		C64FA9F81B20EDE60084D1E5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C64FA9F61B20EDE60084D1E5 /* MainMenu.xib */; };
-		C64FAA041B20EDE60084D1E5 /* popTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C64FAA031B20EDE60084D1E5 /* popTests.m */; };
-		C69C91FB1BA882030071B80E /* PrefView.m in Sources */ = {isa = PBXBuildFile; fileRef = C69C91F91BA882030071B80E /* PrefView.m */; settings = {ASSET_TAGS = (); }; };
-		C69C91FC1BA882030071B80E /* PrefView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69C91FA1BA882030071B80E /* PrefView.xib */; settings = {ASSET_TAGS = (); }; };
+		C64FAA041B20EDE60084D1E5 /* PopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C64FAA031B20EDE60084D1E5 /* PopTests.m */; };
+		C69C92011BA8CD1E0071B80E /* OptionPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = C69C91FF1BA8CD1E0071B80E /* OptionPopover.m */; settings = {ASSET_TAGS = (); }; };
+		C69C92021BA8CD1E0071B80E /* OptionPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69C92001BA8CD1E0071B80E /* OptionPopover.xib */; settings = {ASSET_TAGS = (); }; };
 		C6CD61D21B31C2B600452655 /* BSINABD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C63CF0B41B223C230017D0FD /* BSINABD.TTF */; };
 /* End PBXBuildFile section */
 
@@ -32,19 +32,19 @@
 		C63CF0B01B218E620017D0FD /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
 		C63CF0B11B218E620017D0FD /* Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Date.m; sourceTree = "<group>"; };
 		C63CF0B41B223C230017D0FD /* BSINABD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BSINABD.TTF; sourceTree = "<group>"; };
-		C64FA9EA1B20EDE60084D1E5 /* pop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64FA9EA1B20EDE60084D1E5 /* FarsiCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarsiCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64FA9EE1B20EDE60084D1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C64FA9EF1B20EDE60084D1E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C64FA9F01B20EDE60084D1E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C64FA9F21B20EDE60084D1E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C64FA9F41B20EDE60084D1E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C64FA9F71B20EDE60084D1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		C64FA9FD1B20EDE60084D1E5 /* popTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = popTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64FA9FD1B20EDE60084D1E5 /* FarsiCal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarsiCal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64FAA021B20EDE60084D1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C64FAA031B20EDE60084D1E5 /* popTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = popTests.m; sourceTree = "<group>"; };
-		C69C91F81BA882030071B80E /* PrefView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefView.h; sourceTree = "<group>"; };
-		C69C91F91BA882030071B80E /* PrefView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefView.m; sourceTree = "<group>"; };
-		C69C91FA1BA882030071B80E /* PrefView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrefView.xib; sourceTree = "<group>"; };
+		C64FAA031B20EDE60084D1E5 /* PopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopTests.m; sourceTree = "<group>"; };
+		C69C91FE1BA8CD1E0071B80E /* OptionPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionPopover.h; sourceTree = "<group>"; };
+		C69C91FF1BA8CD1E0071B80E /* OptionPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionPopover.m; sourceTree = "<group>"; };
+		C69C92001BA8CD1E0071B80E /* OptionPopover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionPopover.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 		C64FA9E11B20EDE60084D1E5 = {
 			isa = PBXGroup;
 			children = (
-				C64FA9EC1B20EDE60084D1E5 /* pop */,
-				C64FAA001B20EDE60084D1E5 /* popTests */,
+				C64FA9EC1B20EDE60084D1E5 /* FarsiCal */,
+				C64FAA001B20EDE60084D1E5 /* FarsiCalTests */,
 				C64FA9EB1B20EDE60084D1E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,26 +77,27 @@
 		C64FA9EB1B20EDE60084D1E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C64FA9EA1B20EDE60084D1E5 /* pop.app */,
-				C64FA9FD1B20EDE60084D1E5 /* popTests.xctest */,
+				C64FA9EA1B20EDE60084D1E5 /* FarsiCal.app */,
+				C64FA9FD1B20EDE60084D1E5 /* FarsiCal.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C64FA9EC1B20EDE60084D1E5 /* pop */ = {
+		C64FA9EC1B20EDE60084D1E5 /* FarsiCal */ = {
 			isa = PBXGroup;
 			children = (
 				C64FA9EF1B20EDE60084D1E5 /* AppDelegate.h */,
 				C64FA9F01B20EDE60084D1E5 /* AppDelegate.m */,
 				C63CF0B01B218E620017D0FD /* Date.h */,
 				C63CF0B11B218E620017D0FD /* Date.m */,
-				C69C91F81BA882030071B80E /* PrefView.h */,
-				C69C91F91BA882030071B80E /* PrefView.m */,
 				C64FA9F61B20EDE60084D1E5 /* MainMenu.xib */,
-				C69C91FA1BA882030071B80E /* PrefView.xib */,
 				C64FA9F41B20EDE60084D1E5 /* Images.xcassets */,
 				C64FA9ED1B20EDE60084D1E5 /* Supporting Files */,
+				C69C91FE1BA8CD1E0071B80E /* OptionPopover.h */,
+				C69C91FF1BA8CD1E0071B80E /* OptionPopover.m */,
+				C69C92001BA8CD1E0071B80E /* OptionPopover.xib */,
 			);
+			name = FarsiCal;
 			path = pop;
 			sourceTree = "<group>";
 		};
@@ -110,12 +111,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C64FAA001B20EDE60084D1E5 /* popTests */ = {
+		C64FAA001B20EDE60084D1E5 /* FarsiCalTests */ = {
 			isa = PBXGroup;
 			children = (
-				C64FAA031B20EDE60084D1E5 /* popTests.m */,
+				C64FAA031B20EDE60084D1E5 /* PopTests.m */,
 				C64FAA011B20EDE60084D1E5 /* Supporting Files */,
 			);
+			name = FarsiCalTests;
 			path = popTests;
 			sourceTree = "<group>";
 		};
@@ -130,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C64FA9E91B20EDE60084D1E5 /* pop */ = {
+		C64FA9E91B20EDE60084D1E5 /* FarsiCal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C64FAA071B20EDE60084D1E5 /* Build configuration list for PBXNativeTarget "pop" */;
+			buildConfigurationList = C64FAA071B20EDE60084D1E5 /* Build configuration list for PBXNativeTarget "FarsiCal" */;
 			buildPhases = (
 				C64FA9E61B20EDE60084D1E5 /* Sources */,
 				C64FA9E71B20EDE60084D1E5 /* Frameworks */,
@@ -142,14 +144,14 @@
 			);
 			dependencies = (
 			);
-			name = pop;
+			name = FarsiCal;
 			productName = pop;
-			productReference = C64FA9EA1B20EDE60084D1E5 /* pop.app */;
+			productReference = C64FA9EA1B20EDE60084D1E5 /* FarsiCal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C64FA9FC1B20EDE60084D1E5 /* popTests */ = {
+		C64FA9FC1B20EDE60084D1E5 /* FarsiCalTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C64FAA0A1B20EDE60084D1E5 /* Build configuration list for PBXNativeTarget "popTests" */;
+			buildConfigurationList = C64FAA0A1B20EDE60084D1E5 /* Build configuration list for PBXNativeTarget "FarsiCalTests" */;
 			buildPhases = (
 				C64FA9F91B20EDE60084D1E5 /* Sources */,
 				C64FA9FA1B20EDE60084D1E5 /* Frameworks */,
@@ -160,9 +162,9 @@
 			dependencies = (
 				C64FA9FF1B20EDE60084D1E5 /* PBXTargetDependency */,
 			);
-			name = popTests;
+			name = FarsiCalTests;
 			productName = popTests;
-			productReference = C64FA9FD1B20EDE60084D1E5 /* popTests.xctest */;
+			productReference = C64FA9FD1B20EDE60084D1E5 /* FarsiCal.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C64FA9E51B20EDE60084D1E5 /* Build configuration list for PBXProject "pop" */;
+			buildConfigurationList = C64FA9E51B20EDE60084D1E5 /* Build configuration list for PBXProject "FarsiCal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -196,8 +198,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C64FA9E91B20EDE60084D1E5 /* pop */,
-				C64FA9FC1B20EDE60084D1E5 /* popTests */,
+				C64FA9E91B20EDE60084D1E5 /* FarsiCal */,
+				C64FA9FC1B20EDE60084D1E5 /* FarsiCalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,8 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64FA9F51B20EDE60084D1E5 /* Images.xcassets in Resources */,
-				C69C91FC1BA882030071B80E /* PrefView.xib in Resources */,
 				C6CD61D21B31C2B600452655 /* BSINABD.TTF in Resources */,
+				C69C92021BA8CD1E0071B80E /* OptionPopover.xib in Resources */,
 				C64FA9F81B20EDE60084D1E5 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,8 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64FA9F31B20EDE60084D1E5 /* main.m in Sources */,
-				C69C91FB1BA882030071B80E /* PrefView.m in Sources */,
 				C63CF0B21B218E620017D0FD /* Date.m in Sources */,
+				C69C92011BA8CD1E0071B80E /* OptionPopover.m in Sources */,
 				C64FA9F11B20EDE60084D1E5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64FAA041B20EDE60084D1E5 /* popTests.m in Sources */,
+				C64FAA041B20EDE60084D1E5 /* PopTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		C64FA9FF1B20EDE60084D1E5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C64FA9E91B20EDE60084D1E5 /* pop */;
+			target = C64FA9E91B20EDE60084D1E5 /* FarsiCal */;
 			targetProxy = C64FA9FE1B20EDE60084D1E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -358,7 +360,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.armin.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = pop;
+				PRODUCT_NAME = FarsiCal;
 			};
 			name = Debug;
 		};
@@ -375,7 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.armin.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = pop;
+				PRODUCT_NAME = FarsiCal;
 			};
 			name = Release;
 		};
@@ -395,8 +397,8 @@
 				INFOPLIST_FILE = popTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.armin.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = popTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pop.app/Contents/MacOS/pop";
+				PRODUCT_NAME = FarsiCal;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarsiCal.app/Contents/MacOS/FarsiCal";
 			};
 			name = Debug;
 		};
@@ -412,15 +414,15 @@
 				INFOPLIST_FILE = popTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.armin.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = popTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pop.app/Contents/MacOS/pop";
+				PRODUCT_NAME = FarsiCal;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarsiCal.app/Contents/MacOS/FarsiCal";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C64FA9E51B20EDE60084D1E5 /* Build configuration list for PBXProject "pop" */ = {
+		C64FA9E51B20EDE60084D1E5 /* Build configuration list for PBXProject "FarsiCal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C64FAA051B20EDE60084D1E5 /* Debug */,
@@ -429,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C64FAA071B20EDE60084D1E5 /* Build configuration list for PBXNativeTarget "pop" */ = {
+		C64FAA071B20EDE60084D1E5 /* Build configuration list for PBXNativeTarget "FarsiCal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C64FAA081B20EDE60084D1E5 /* Debug */,
@@ -438,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C64FAA0A1B20EDE60084D1E5 /* Build configuration list for PBXNativeTarget "popTests" */ = {
+		C64FAA0A1B20EDE60084D1E5 /* Build configuration list for PBXNativeTarget "FarsiCalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C64FAA0B1B20EDE60084D1E5 /* Debug */,
