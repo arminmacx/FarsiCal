@@ -1,4 +1,4 @@
 language: objective-c
 osx_image: xcode7.0
 xcode_project: FarsiCal.xcodeproj
-xcode_scheme: FarsiCal
+xcode_scheme: pop
