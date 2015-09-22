@@ -9,14 +9,28 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
                BuildableName = "FarsiCal.xctest"
                BlueprintName = "FarsiCalTests"
+               ReferencedContainer = "container:FarsiCal.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
+               BuildableName = "FarsiCal.app"
+               BlueprintName = "FarsiCal"
                ReferencedContainer = "container:FarsiCal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
-            BuildableName = "FarsiCal.xctest"
-            BlueprintName = "FarsiCalTests"
+            BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
+            BuildableName = "FarsiCal.app"
+            BlueprintName = "FarsiCal"
             ReferencedContainer = "container:FarsiCal.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,15 +75,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
-            BuildableName = "FarsiCal.xctest"
-            BlueprintName = "FarsiCalTests"
+            BlueprintIdentifier = "C64FA9E91B20EDE60084D1E5"
+            BuildableName = "FarsiCal.app"
+            BlueprintName = "FarsiCal"
             ReferencedContainer = "container:FarsiCal.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,6 +94,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C64FA9FC1B20EDE60084D1E5"
+            BuildableName = "FarsiCal.xctest"
+            BlueprintName = "FarsiCalTests"
+            ReferencedContainer = "container:FarsiCal.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
