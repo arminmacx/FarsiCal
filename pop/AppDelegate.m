@@ -124,18 +124,18 @@
     [[NSApplication sharedApplication] terminate:self];
 }
 
-- (IBAction)changeView:(NSButton *)sender {
-    NSLog (@"Custom button pressed.");
-    NSButton *button = (NSButton *) sender;
-    
-    optionPopover = [[OptionPopover alloc] initWithNibName:@"OptionPopover" bundle:Nil];
-    //NSView *buttonView = [optionsButton view];
-    //NSRect buttonFrame = [optionsButton view]->_frame;
-    [optionPopover showPopup:button];
-    
-    
-
-}
+//- (IBAction)changeView:(NSButton *)sender {
+//    NSLog (@"Custom button pressed.");
+//    NSButton *button = (NSButton *) sender;
+//    
+//    optionPopover = [[OptionPopover alloc] initWithNibName:@"OptionPopover" bundle:Nil];
+//    //NSView *buttonView = [optionsButton view];
+//    //NSRect buttonFrame = [optionsButton view]->_frame;
+//    [optionPopover showPopup:button];
+//    
+//    
+//
+//}
 
 
 

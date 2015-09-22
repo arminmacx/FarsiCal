@@ -732,17 +732,6 @@
                         <action selector="exitButton:" target="Voe-Tx-rLC" id="Agf-TW-jOd"/>
                     </connections>
                 </button>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qi-Gv-8pw">
-                    <rect key="frame" x="7" y="243" width="20" height="22"/>
-                    <animations/>
-                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="info" imagePosition="overlaps" alignment="center" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="X3j-1D-dcu">
-                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="changeView:" target="Voe-Tx-rLC" id="bKj-ru-GMd"/>
-                    </connections>
-                </button>
             </subviews>
             <animations/>
             <point key="canvasLocation" x="282.5" y="273.5"/>
@@ -750,6 +739,5 @@
     </objects>
     <resources>
         <image name="Image" width="258" height="258"/>
-        <image name="info" width="36" height="36"/>
     </resources>
 </document>
