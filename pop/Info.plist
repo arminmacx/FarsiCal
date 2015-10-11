@@ -32,6 +32,8 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>ATSApplicationFontsPath</key>
+	<string></string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>BSINABD.TTF</string>
